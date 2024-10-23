@@ -1,6 +1,14 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,xcode,c++,xcodeinjection
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,xcode,c++,xcodeinjection
 
+
+
+
+### MusicStore ###
+ms
+ms.o
+musicstore.o
+
 ### C++ ###
 # Prerequisites
 *.d
