@@ -1,4 +1,4 @@
-# MusicStore 🎵
+# MusicStore ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 A dynamic music store application for efficiently organizing and retrieving music collections based on artists, albums, and songs.
 
 ## Project Purpose 🎯
