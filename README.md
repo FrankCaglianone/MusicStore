@@ -20,13 +20,14 @@ To get **MusicStore** up and running locally, follow these steps:
 
 2. **Installation**:
    ```bash
-   git clone 
-   cd MusicStore
+   git clone https://github.com/FrankCaglianone/MusicStore.git
+   cd MusicStore/musicstore
    ```
 
 3. **Build the Project**:
    ```bash
-   gcc -o musicstore musicstore.c   # or use g++ for C++ versions
+   # To create the executable 
+   make
    ```
 
 ## Usage 🛠️
