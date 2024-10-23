@@ -33,27 +33,30 @@ To get **MusicStore** up and running locally, follow these steps:
 ## Usage 🛠️
 **MusicStore** provides several functions to work with your music collection:
 
-1. **Create and Destroy a Music Store**:
-   ```c
-   struct musicstore *store = ms_create();
-   ms_destroy(store);
+1. **Start the executable**:
+   ```bash
+   ./ms
    ```
 
-2. **Read Music Files from a Directory**:
-   ```c
-   ms_read_from_directory(store, "./path/to/music/folder");
+2. **Read the provided music files**:
+   ```bash
+   read tests
    ```
 
-3. **Query Artists**:
-   ```c
-   void print_artist(const char *artist, unsigned albums_count, unsigned songs_count) {
-       printf("Artist: %s, Albums: %u, Songs: %u\n", artist, albums_count, songs_count);
-   }
-   ms_get_artist(store, NULL, print_artist); // Retrieve all artists
-   ```
+3. **Start Querying**:
+   - `?`: Prints the current musicstore index and set query parameters (artist, album, title).
+   - `+`: Creates a new musicstore object and switches to it.
+   - `-<index>`: Destroys the musicstore object at the specified index.
+   - `=<index>`: Switches to the musicstore object at the specified index.
+   - `artist`: <name>: Sets the artist filter to the specified name.
+   - `album`: <name>: Sets the album filter to the specified name.
+   - `title`: <name>: Sets the title filter to the specified name.
+   - `read <directory>`: Reads the specified directory and stores the music data in the current musicstore.
+   - `get_songs`: Prints all songs matching the current artist, album, and title filters.
+   - `get_artist`: Prints all artists matching the current artist filter.
+   - `get_albums`: Prints all albums matching the current artist and album filters.
+   - `>`: Prints a message to the console.
 
-4. **Query Albums and Songs**:
-   Similar to artist queries, you can define callback functions for albums and songs using `ms_get_albums` and `ms_get_songs`.
 
 ## License 📄
 This project is licensed under the [MIT License](LICENSE).
